@@ -35,3 +35,10 @@ Open http://localhost:43655
 
 - Commit only, no push: `AUTO_PUSH=false npm start` (Windows PowerShell: `$env:AUTO_PUSH="false"; npm start`)
 - Different port: `PORT=4000 npm start`
+
+## Naming photos
+
+Each photo gets a name field before upload. Type the name you want (for example
+`abc` for a photo called `xyz.jpg`) and it is saved as `abc.jpg`. The page warns
+you if that name is already used in `images/`, and the server checks again and
+refuses to overwrite anything. Spaces and symbols in a name become hyphens.
